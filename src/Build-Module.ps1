@@ -43,7 +43,7 @@ try {
     #Creating Module Manifest
     New-ModuleManifest @Params
     
-    #Creating ADO-PSModule.psm1 file
+    #Creating OuraRing.psm1 file
     New-Item -Path "$ModulePath/OuraRing.psm1" -ItemType File -Force | Out-Null
     
     $AllFunctions = @()
@@ -52,7 +52,7 @@ try {
     
     foreach ($Function in $AllFunctions){
         $Content = Get-Content -Path $Function.ResolvedTarget
-        #Adding content to ADO-PSModule.psm1 file
+        #Adding content to OuraRing.psm1 file
         Add-Content -Path "$ModulePath/OuraRing.psm1" -Value $Content
     }
 }
