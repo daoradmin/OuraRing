@@ -19,4 +19,4 @@ Powershell Module for Oura Ring.
     2. $secureString = ConvertTo-SecureString -String $accessToken -AsPlainText -Force
     3. Connect-OuraRing -AccessToken $secureString
 
-3. Use "Get-Command -Module Oura.Ring" to see all cmdlets.
+3. Use "Get-Command -Module OuraRing" to see all cmdlets.
